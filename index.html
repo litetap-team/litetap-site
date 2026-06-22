@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>litetap — Free and Open Source Autoclicker</title>
+    <link rel="icon" type="image/x-icon" href="favico.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="desktop-wallpaper">
+        <div class="accent-spot spot-blue"></div>
+        <div class="accent-spot spot-purple"></div>
+    </div>
+
+    <header class="mica-navigation">
+        <div class="nav-container">
+            <div class="logo-block">
+                <img src="favico.ico" alt="litetap" class="app-icon">
+                <span class="app-title">litetap</span>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="#features" data-lang-ru="Возможности" data-lang-en="Features">Features</a>
+                <a href="#source" data-lang-ru="Исходный код" data-lang-en="Source Code">Source Code</a>
+            </nav>
+
+            <div class="controls-block">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="17.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+
+                <div class="lang-switcher">
+                    <button onclick="changeLanguage('ru', event)" class="lang-btn">RU</button>
+                    <button onclick="changeLanguage('en', event)" class="lang-btn active">EN</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-layout">
+
+        <section id="download" class="hero-section">
+            <div class="mica-card hero-card">
+                <div class="version-badge">Open Source // Free</div>
+                <h1 data-lang-ru="Свободный автокликер litetap для Windows" data-lang-en="Free and Open Source litetap Autoclicker">Free and Open Source litetap Autoclicker</h1>
+                <p data-lang-ru="Полностью бесплатный инструмент с открытым исходным кодом. Скорость, кастомизация интерфейса и стабильная работа без скрытых подписок и ограничений." data-lang-en="Completely free tool with open source code. Speed, interface customization, and stable performance with no hidden subscriptions or limitations.">Completely free tool with open source code. Speed, interface customization, and stable performance with no hidden subscriptions or limitations.</p>
+                
+                <div class="action-group">
+                    <a href="https://github.com/litetap-team/litetap/releases/download/release/Litetap_Setup.exe" class="btn-primary" data-lang-ru="Скачать" data-lang-en="Download Now">Download Now</a>
+                    <a href="https://github.com/litetap-team/litetap" target="_blank" class="btn-secondary" data-lang-ru="Репозиторий" data-lang-en="Repository">Repository</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section-container">
+            <h2 class="section-title" data-lang-ru="Преимущества и технологии" data-lang-en="Features & Technologies">Features & Technologies</h2>
+            <div class="fluent-grid">
+                <div class="mica-card feature-box">
+                    <h3 data-lang-ru="Стабильные 100 CPS" data-lang-en="Stable 100 CPS">Stable 100 CPS</h3>
+                    <p data-lang-ru="Четкая фиксация частоты нажатий без просадок и задержек, оптимизированная под высокие нагрузки." data-lang-en="Precise click frequency locking without drops or delays, optimized for high-load environments.">Precise click frequency locking without drops or delays, optimized for high-load environments.</p>
+                </div>
+                <div class="mica-card feature-box">
+                    <h3 data-lang-ru="XML Кастомизация" data-lang-en="XML Theming">XML Theming</h3>
+                    <p data-lang-ru="Полная поддержка XML-темминга. Создавайте, редактируйте и делитесь собственными схемами оформления интерфейса." data-lang-en="Full XML theming support. Create, edit, and share your own interface design configurations.">Full XML theming support. Create, edit, and share your own interface design configurations.</p>
+                </div>
+                <div class="mica-card feature-box">
+                    <h3 data-lang-ru="Современные стили" data-lang-en="Mica & Acrylic">Mica & Acrylic</h3>
+                    <p data-lang-ru="Нативная интеграция эффектов размытия Mica и Acrylic для идеального соответствия стилю Windows 11." data-lang-en="Native integration of Mica and Acrylic blur effects to perfectly match the Windows 11 design language.">Native integration of Mica and Acrylic blur effects to perfectly match the Windows 11 design language.</p>
+                </div>
+                <div class="mica-card feature-box">
+                    <h3 data-lang-ru="Поддержка Legacy" data-lang-en="Legacy Systems Support">Legacy Systems Support</h3>
+                    <p data-lang-ru="Стабильная обратная совместимость со старыми сборками операционных систем без потери производительности." data-lang-en="Stable backward compatibility with older operating system builds without any drop in performance.">Stable backward compatibility with older operating system builds without any drop in performance.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="source" class="section-container">
+            <div class="mica-card repo-card">
+                <h2 class="section-title" data-lang-ru="Проект на GitHub" data-lang-en="Project on GitHub">Project on GitHub</h2>
+                <p data-lang-ru="Вы можете самостоятельно изучить код, скомпилировать сборку или внести свои изменения. Мы приветствуем вклад сообщества в развитие litetap." data-lang-en="You can review the code yourself, compile the build, or make changes. We welcome community contributions to the development of litetap.">You can review the code yourself, compile the build, or make changes. We welcome community contributions to the development of litetap.</p>
+                <a href="https://github.com/litetap-team/litetap" target="_blank" class="btn-secondary" data-lang-ru="Открыть репозиторий" data-lang-en="Open Repository">Open Repository</a>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        function changeLanguage(lang, event) {
+            document.querySelectorAll('[data-lang-ru]').forEach(element => {
+                element.textContent = element.getAttribute('data-lang-' + lang);
+            });
+            
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            document.documentElement.lang = lang;
+        }
+
+        const themeToggle = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+
+        if (currentTheme === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            let theme = 'dark';
+            if (document.documentElement.getAttribute('data-theme') !== 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+                theme = 'light';
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+            }
+            localStorage.setItem('theme', theme);
+        });
+    </script>
+</body>
+</html>
